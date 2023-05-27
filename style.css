@@ -170,31 +170,8 @@ footer {
 
 @media (max-width: 1060px){
     .botones{
-        margin-left: 6%;
-    }
-
-    .caja-copiar{
-        margin-left: 40%;
-    }
-}
-
-@media (max-width: 976px){
-    .botones{
-        margin-left: 5%;
-    }
-
-    .caja-copiar{
-        margin-left: 39%;
-    }
-
-    .mensaje{
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 1060px){
-    .botones{
         width: 40%;
+        margin-left: 6%;
     }
 
     .encriptar{
@@ -224,8 +201,54 @@ footer {
     }
 }
 
-@media (max-width: 798px){
+@media (max-width: 976px){
+    .botones{
+        margin-left: 5%;
+    }
 
+    .caja-copiar{
+        margin-left: 39%;
+    }
+
+    .mensaje{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 798px){
+    .mensaje{
+        width: 92%;
+        margin-left: -6%;
+        padding-bottom: 8%;
+    }
+
+    .botones{
+        width: 35%;
+        margin-left: -32%;
+    }
+
+    .encriptar{
+        margin-left: 54%;
+        padding: 10% 106% 10% 106%;
+    }
+
+    .desencriptar{
+        margin-left: 54%;
+        padding: 10% 96.7% 10% 96.7%;
+    }
+
+    .mensaje-cifrado{
+        width: 92%;
+        margin-left: -2%;
+    }
+
+    .copiar{
+        margin-left: -64%;
+        padding: 5% 64.3% 5% 64.3%;
+    }
+    #mensaje {
+        padding-left: 0%;
+    }
 }
 
 @media (max-width: 400px){
