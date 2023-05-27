@@ -225,5 +225,39 @@ footer {
 }
 
 @media (max-width: 798px){
-    
+
+}
+
+@media (max-width: 400px){
+    .mensaje{
+        width: 106%;
+        margin-left: -24%;
+        padding-bottom: 68%;
+    }
+
+    .botones{
+        width: 35%;
+        margin-left: -32%;
+    }
+
+    .encriptar{
+        margin-left: 3%;
+        padding: 10% 106% 10% 106%;
+    }
+
+    .desencriptar{
+        margin-left: 3%;
+        padding: 10% 88.7% 10% 88.7%
+    }
+
+    .mensaje-cifrado{
+        width: 106%;
+        margin-left: -3%;
+    }
+
+    .copiar{
+        margin-left: -61%;
+        padding: 5% 66.3% 5% 66.3%;
+    }
+
 }
