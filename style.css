@@ -249,6 +249,12 @@ footer {
     #mensaje {
         padding-left: 0%;
     }
+
+    .encriptar:hover, .desencriptar:hover, .copiar:hover{
+        scale: 1;
+        background-color: rgb(47, 45, 45);
+        transition: 300ms;
+    }
 }
 
 @media (max-width: 400px){
