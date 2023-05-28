@@ -281,34 +281,37 @@ footer {
 
 @media (max-width: 400px){
     .mensaje{
-        width: 108%;
+        width: 105%;
         margin-left: -10%;
         padding-bottom: 68%;
     }
 
     .botones{
-        width: 35%;
+        width: 34%;
         margin-left: -32%;
     }
 
     .encriptar{
-        margin-left: 60%;
-        padding: 10% 106% 10% 106%;
+        margin-left: 55%;
+        padding: 10% 100% 10% 100%;
     }
 
     .desencriptar{
-        margin-left: 61%;
-        padding: 10% 88.7% 10% 88.7%
+        margin-left: 55%;
+        margin-right: 0%;
+        padding: 10% 83.7% 10% 83.7%
     }
 
     .mensaje-cifrado{
         width: 106%;
-        margin-left: -21%;
+        margin-left: -20%;
+        margin-right: 0%;
+        padding-right: 34%;
     }
 
     .copiar{
-        margin-left: -61%;
-        padding: 5% 66.3% 5% 66.3%;
+        margin-left: -82%;
+        padding: 6% 80.3% 6% 80.3%;
     }
 
     aside{
