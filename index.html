@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,38 +11,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
     <title>Encriptador</title>
 </head>
+
 <body>
-   <header>
+    <header>
         <img src="img/alura.png" alt="logo alura" class="logo">
-   </header>
+    </header>
 
-   <main>
-        <section id="mensaje">
-            <textarea cols="30" rows="8" class="mensaje" placeholder="Ingrese el mensaje aquí"></textarea>
+    <main class="main">
 
-            <div><h6>Solo letras minúsculas y sin acentos</h6></div>
+        <div class="texto">
+            <textarea class="mensaje textarea" placeholder="Ingrese el mensaje aquí"></textarea>
+
+            <div>
+                <h6>Solo letras minúsculas y sin acentos</h6>
+            </div>
 
             <div class="botones">
-                <button class="encriptar">Encriptar</button>
-                <button class="desencriptar">Desencriptar</button>
+                <button class="encriptar boton">Encriptar</button>
+                <button class="desencriptar boton">Desencriptar</button>
             </div>
-        </section>
+        </div>
 
-        <aside>
-            <textarea cols="30" rows="7" class="mensaje-cifrado"></textarea>
+        <div class="aside">
+            <textarea class="mensaje-cifrado textarea texto-vacio placeholder-text" disabled></textarea>
+            <button class="copiar boton">Copiar</button>
+        </div>
 
-            <div class="caja-copiar">
-                <button class="copiar">Copiar</button>
-            </div>
-        </aside>
+    </main>
 
-   </main>
-
-    <footer>
-            &copy;  Desarrollado por Octavio Lomeli  2023
-   </footer>
-
-   <script src="script.js">          
-   </script>
+    <script src="script.js">
+    </script>
 </body>
+
 </html>

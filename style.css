@@ -1,322 +1,137 @@
 *{
-    background-color: rgb(223, 255, 244);
+    background-color: #fff;
     font-family: 'inter';
 }
 
 header{
-    width: 100%;
-    height: 5%;
+    height: 70px;
+    padding-top: 10px;
 }
 
-main{
-    width: 90%;
+body{
+    max-width: 1200px;
+    height: 100vh;
     margin: 0 auto;
+    box-sizing: border-box;
+    padding: 10px;
 }
 
-section{
-    width: 66%;
-    display: inline-block;
+.main{
+    display: flex;
+    height: 90%;
+    gap: 50px;
+    justify-content: space-between; 
 }
 
-#mensaje{
-    margin-left: 100px;
-    margin-top: 50px;
+.texto, .aside{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.logo{
-    width: 32px;
-    height: 0 auto;
-    margin-left: 5%;
+.aside{
+    align-items: center;
+    box-sizing: border-box;
 }
 
-.mensaje{
-    width: 66%;
-    border: 1px solid rgb(23, 15, 77);
-    font-size: 45px;
-    color: rgb(23, 15, 77);
+.texto .mensaje {
+    box-sizing: border-box;
+    width: 100%;
+    height: 80%;
 }
 
-div > h6{
-    font-size: 12px;
-    margin: 15px 0px 2px 0px;
+.aside .mensaje-cifrado{
+    box-sizing: border-box;
+    width: 100%;
+    height: 80%;
+
+}
+
+.textarea{
+    font-size: 42px;
+    overflow: auto;
+    resize: none;
+    background-color: #F9FAFB;
+    border-color: #D1D5DB;
+    border-radius: 10px;
+}
+
+.texto-vacio{
+    background-image: url("img/esperandoTexto.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: 10px;
 }
 
 .botones{
-    width: 54%;
-    height: 0 auto;
-    padding-left: 50px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.encriptar, .desencriptar, .copiar{
-    padding: 15px 50px 15px 50px;
-    margin: 15px;
-    margin-left: 30px;
-
-    border-radius: 15px;
-    background-color: black;
-    color: white;
+.boton{
+    width: 250px;
+    height: 80px;
+    color: #fff;
     border: none;
+    font-size: 24px;
+    cursor: pointer;
 }
 
-.encriptar:hover, .desencriptar:hover, .copiar:hover{
-    scale: 1.2;
-    background-color: rgb(47, 45, 45);
-    transition: 300ms;
+.encriptar{
+    background-color: rgb(59, 130, 246);
 }
 
-aside{
-    float: right;
+.encriptar:hover{
+    background-color:  rgb(41, 113, 230);
 }
 
-.mensaje-cifrado{
-    width: 100%;
-    height: 433px;
-    margin-right: 44px;
-    margin-top: 55px;
-    background-color: rgb(168, 212, 245);
+.desencriptar, .copiar{
+    background-color: #18181B;
     border-radius: 15px;
-    font-size: 18px;
 }
 
-.caja-copiar{
-    padding-left: 73px;
-    margin-top: 26px;
+.desencriptar:hover, .copiar:hover{
+    background-color: #000000;
 }
 
-footer {
-    margin-top: 20px;
-    font-size: 12px;
-    font-weight: 800;
-    text-align: center;
+div > h6{
+    font-size: 14px;
 }
 
-@media (max-width: 1467px){
-
-    #mensaje{
-        margin-left: 30px;
+@media(max-width: 1100px){
+    .main{
+        flex-direction: column;
+        justify-content: inherit;
+        align-items: inherit;
     }
-
-}
-
-@media (max-width: 1357px){
-
-    .mensaje-cifrado{
-        margin-right: 100px;
-    }
-
-    section{
-        width: 62%;
-    }
-
     .botones{
-        width: 60%;
-        padding-left: 15px;
-        margin-left: 8%;
+        justify-content: center;
+        gap: 20px;
     }
-
-    .encriptar{
-        padding: 15px 40px 15px 40px;
-        margin: 10px;
-        margin-left: 10px;
+    .boton{
+        width: 400px;
     }
-
-    .caja-copiar{
-        padding-left: 0px;
-        margin-left: 32%;
+    .aside{
+        gap: 20px;
+        padding-bottom: 10px;
+    }
+    .texto .mensaje, .aside .mensaje-cifrado{
+        height: 400px;
+    }
+    .texto-vacio{
+        background-size:contain;
+        background-position:center;
     }
 }
 
-@media (max-width: 1272px){
-    section{
+@media(max-width: 840px){
+    .botones{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .boton{
         width: 100%;
-        display: block;
     }
-
-    #mensaje{
-        padding-left: 13%;
-    }
-
-    aside{
-        float: none;
-    }
-
-    .mensaje-cifrado{
-        width: 66%;
-        margin-left: 17%;
-    }
-
-    .botones{
-        margin-left: 8%;
-        padding-left: 9%;
-    }
-
-    .encriptar{
-        margin-right: 7%;
-    }
-
-    .caja-copiar{
-        margin-left: 41%;
-    }
-
-    .mensaje{
-        margin-left: 1.1%;
-    }
-
-    div > h6{
-        margin-left: 1.1%;
-    }
-}
-
-@media (max-width: 1060px){
-    .botones{
-        width: 40%;
-        margin-left: 6%;
-    }
-
-    .encriptar{
-        margin-left: 10%;
-        padding: 10% 25% 10% 25%;
-        font-size: 25px;
-    }
-
-    .desencriptar{
-        margin-left: 9%;
-        padding: 10% 19.1% 10% 19.1%;
-        font-size: 25px;
-    }
-
-    .caja-copiar{
-        margin-left: 38%;
-    }
-
-    .copiar{
-        margin-left: -4%;
-        padding: 5% 16.1% 5% 16.1%;
-        font-size: 25px;
-    }
-    
-    #mensaje{
-        padding-left: 12%;
-    }
-}
-
-@media (max-width: 976px){
-    .botones{
-        margin-left: 5%;
-    }
-
-    .caja-copiar{
-        margin-left: 39%;
-    }
-
-    .mensaje{
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 798px){
-    .mensaje{
-        width: 108%;
-        margin-left: -6%;
-        padding-bottom: 8%;
-    }
-
-    .botones{
-        width: 35%;
-        margin-left: -32%;
-    }
-
-    .encriptar{
-        margin-left: 85%;
-        padding: 10% 106% 10% 106%;
-    }
-
-    .desencriptar{
-        margin-left: 86%;
-        padding: 10% 97.7% 10% 97.7%;
-    }
-
-    .mensaje-cifrado{
-        width: 115%;
-        margin-left: -2%;
-    }
-
-    .copiar{
-        margin-left: -49%;
-        padding: 5% 64.3% 5% 64.3%;
-    }
-    #mensaje {
-        padding-left: 0%;
-        width: 114%;
-    }
-
-    .encriptar:hover, .desencriptar:hover, .copiar:hover{
-        scale: 1;
-        background-color: rgb(47, 45, 45);
-        transition: 300ms;
-    }
-
-    aside{
-        margin-left: 14%;
-    }
-}
-
-@media (max-width: 700px){
-    .encriptar{
-        padding: 10% 103% 10% 103%;
-    }
-
-    .desencriptar{
-        padding: 10% 92.7% 10% 92.7%;
-    }
-}@media (max-width: 618px){
-    .encriptar{
-        padding: 10% 103% 10% 103%;
-    }
-
-    .desencriptar{
-        padding: 10% 92.7% 10% 92.7%;
-    }
-}
-
-@media (max-width: 400px){
-    .mensaje{
-        width: 105%;
-        margin-left: -10%;
-        padding-bottom: 68%;
-    }
-
-    .botones{
-        width: 34%;
-        margin-left: -32%;
-    }
-
-    .encriptar{
-        margin-left: 55%;
-        padding: 10% 100% 10% 100%;
-    }
-
-    .desencriptar{
-        margin-left: 55%;
-        margin-right: 0%;
-        padding: 10% 83.7% 10% 83.7%
-    }
-
-    .mensaje-cifrado{
-        width: 106%;
-        margin-left: -20%;
-        margin-right: 0%;
-        padding-right: 34%;
-    }
-
-    .copiar{
-        margin-left: -82%;
-        padding: 6% 80.3% 6% 80.3%;
-    }
-
-    aside{
-        float: none;
-        margin-left: 15%;
-    }
-
 }

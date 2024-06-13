@@ -42,7 +42,14 @@ function copiar () {
   navigator.clipboard.writeText(textoEncriptado);
 }
 
-btnEncriptar.onclick = encriptar;
-btnDesencriptar.onclick = desencriptar;
+btnEncriptar.addEventListener('click',()=>{
+  encriptar();
+  textoResultado.classList.remove('texto-vacio')
+})
 
-btnCopiar.onclick = copiar;
+btnDesencriptar.addEventListener('click',()=>{
+  desencriptar();
+  textoResultado.classList.remove('texto-vacio')
+})
+
+ btnCopiar.addEventListener('click',copiar)
